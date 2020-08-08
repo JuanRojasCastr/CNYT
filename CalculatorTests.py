@@ -95,6 +95,8 @@ class TestComplexCalculator(unittest.TestCase):
         self.assertEqual(ComplexCalculator.polar(c), (5, 0.64))
         self.assertEqual(ComplexCalculator.polar(d), (5.1, 3.34))
 
+    # POLAR TO CARTESIAN TEST
+
     def test_cart(self):
         a = (2.24, 2.03)
         b = (3.61, 5.3)
@@ -105,6 +107,8 @@ class TestComplexCalculator(unittest.TestCase):
         self.assertEqual(ComplexCalculator.cart(b), (2, -3))
         self.assertEqual(ComplexCalculator.cart(c), (4, 3))
         self.assertEqual(ComplexCalculator.cart(d), (-5, -1))
+
+    # PHASE TEST
 
     def test_phase(self):
         a = (-2, 1)
