@@ -56,6 +56,19 @@ class TestComplexCalculator(unittest.TestCase):
         self.assertEqual(ComplexCalculator.div(d, b), (1.333, 1.667))
         self.assertEqual(ComplexCalculator.div(a, d), (-0.927, -0.341))
 
+    # MODULUS TEST
+
+    def test_mod(self):
+        a = (4, 3)
+        b = (2, 1)
+        c = (5, 7)
+        d = (1, 4)
+
+        self.assertEqual(ComplexCalculator.mod(a), 5)
+        self.assertEqual(ComplexCalculator.mod(b), 2.24)
+        self.assertEqual(ComplexCalculator.mod(c), 8.6)
+        self.assertEqual(ComplexCalculator.mod(d), 4.12)
+
     # CONJUGATE TEST
 
     def test_conj(self):
