@@ -54,6 +54,8 @@ def mod(c1):
     # print(m)
 
 
+# print(mod((3, 2)))
+
 # CONJUGATE
 
 def conj(c1):
