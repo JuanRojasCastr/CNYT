@@ -1,6 +1,14 @@
 import math
 import ComplexCalculator
 
+def f_aux(product):
+    aux = 0
+    if product[0][0][0] != 1 and product[0][1][0] == 0:
+            if product[0][0][0] > 0:
+                aux = (1/(product[0][0][0]))
+            elif product[0][0][0] < 0:
+                aux = (-1/(product[0][0][0]))
+    return aux
 
 def length(v1, v2):
     if len(v1) == len(v2):
@@ -16,13 +24,6 @@ def diagonal(m):
             if i == j:
                 mI[i][j] = (1, 0)
     return mI
-
-
-def scalar_mul(sc, c1):
-    re = sc * c1[0]
-    im = sc * c1[1]
-    res = re, im
-    return res
 
 
 def conj_tup(c1):
@@ -41,7 +42,7 @@ def v_add(v1, v2):
             m += [ComplexCalculator.add(v1[index], v2[index])]
         return m
     else:
-        print('Error: Different length vector')
+        return 'Error: Different length vector'
 
 
 # VECTOR INVERSE ADD
@@ -58,7 +59,7 @@ def v_inv_add(v1):
 def v_scalar(sc, v1):
     m = []
     for index in range(len(v1)):
-        m += [scalar_mul(sc, v1[index])]
+        m += [ComplexCalculator.multi(sc, v1[index])]
     return m
 
 
@@ -71,7 +72,7 @@ def m_add(m1, m2):
             m += [v_add(m1[row], m2[row])]
         return m
     else:
-        print('Error: Different length vector')
+        return 'Error: Different length vector'
 
 
 # MATRIX INVERSE ADD
@@ -92,7 +93,7 @@ def m_scalar(sc, m1):
     return m
 
 
-# MATRIX/VECTOR TRASPOSE
+# MATRIX/VECTOR TRANSPOSE
 
 def m_trans(m1):
     m = [[(0, 0) for i in range(len(m1))] for j in range(len(m1[0]))]
@@ -133,7 +134,7 @@ def m_mul(m1, m2):
                     m[row][column] = ComplexCalculator.add(m[row][column], ComplexCalculator.multi(m1[row][aux], m2[aux][column]))
         return m
     else:
-        print("Length error")
+        return "Length error"
 
 
 # MATRIX ACTION
@@ -152,7 +153,7 @@ def v_inner(v1, v2):
             point = ComplexCalculator.add(point, aux)
         return point
     else:
-        print("Length error")
+        return "Length error"
 
 
 # VECTOR NORM
@@ -174,7 +175,7 @@ def v_dist(v1, v2):
         dist = abs(v_norm(v))
         return dist
     else:
-        print('Error: Different length vector')
+        return 'Error: Different length vector'
 
 
 # UNITARY MATRIX
@@ -185,16 +186,18 @@ def m_unit(m1):
         m2 = m_adj(m1)
         product = m_mul(m1, m2)
         flag = True
+        aux = f_aux(product)
         for i in range(len(m1)):
             for j in range(len(m1)):
                 if product[i][j] != mI[i][j]:
                     flag = False
+
         if flag:
-            print("Is Unitary")
+            return "Is Unitary"
         else:
-            print("Is not Unitary")
+            return "Is not Unitary"
     else:
-        print("The input have to be a square matrix")
+        return "The input have to be a square matrix"
 
 
 # HERMITIAN MATRIX
@@ -207,6 +210,6 @@ def m_herm(m1):
             if m1[i][j] != m2[i][j]:
                 flag = False
     if flag:
-        print("Is hermitian")
+        return "Is hermitian"
     else:
-        print("Is not hermitian")
+        return "Is not hermitian"
