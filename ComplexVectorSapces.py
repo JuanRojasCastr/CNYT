@@ -213,3 +213,16 @@ def m_herm(m1):
         return "Is hermitian"
     else:
         return "Is not hermitian"
+
+# TENSOR
+
+def m_tensor(m1, m2):
+    mt = [[[] for j in range(len(m1[0]))] for i in range(len(m1))]
+    for row in range(len(m1)):
+        for column in range((len(m1[0]))):
+            sc = m1[row][column]
+            mt[row][column] = m_scalar(sc, m2)
+    return mt
+
+
+
