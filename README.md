@@ -14,31 +14,73 @@ Here are exactly the things that you can do:
 	- Cartesian to Polar
 8. Phase
 
+### New Update!!
+The calculator recently have a update that add new awesome functions, all related with Complex Vector Spaces, maybe its a hard concept to understand but am sure that this calculator can help you and make it easy.
+
+The new functions:
+- Vector Addition
+- Vector Inverse Addition
+- Vector Scalar Multiplication
+- Matrix Addition
+- Matrix Inverse Addition
+- Matrix Scalar Multiplication
+- Matrix/Vector Transpose
+- Matrix/Vector Conjugate
+- Matrix/Vector Adjoint
+- Matrix Multiplication
+- Matrix Action Over a Vector
+- Inner Point
+- Vector Norm
+- Distance Between Vectors
+- Unitary Matrix Verification
+- Hermitian Matrix Verification
+- Matrix Tensor Product
+
+There is a lot of new functions, am sure that will be very useful,
+
+
+***Important!!:** Every time i update the project the newest this will be ahead and the others will be registered below*
+
 ## What do you need to get a copy?
 ### Prerequisite
 - Python (PyCharm or IDLE)
 - Git
 ### Installing
+Don't mind about the updates, the installation process is the same. 
 
 In case you know how to use Git just clone the project and omit the following steps. 
 
-First open or create a folder where you want to clone the project, then with right-click select "Git Bash Here" once the console is open write "git clone" and paste the repository link, to copy just go upper and select "code" and click on the copy icon as the following image:
+First open or create a folder where you want to clone the project, then with right-click select "Git Bash Here" once the console is open write "git clone" and paste the repository link, as the following images:
 
-![Steps](https://media.discordapp.net/attachments/584593411567517710/741729755992293406/unknown.png)
+***1. New Folder:***
 
-Now the repository is copied and you are ready to open the project "ComplexCalculator.py". 
+![Step1](https://cdn.discordapp.com/attachments/584593411567517710/747548747763941496/unknown.png)
+
+***2. (Git Bash):***
+
+![Step2](https://cdn.discordapp.com/attachments/584593411567517710/747549065453109268/unknown.png)
+
+***3(Console Command):***
+
+![Step3](https://cdn.discordapp.com/attachments/584593411567517710/747549595386642492/unknown.png)
+
+To copy just go upper and select "code" and click on the copy icon as the following image:
+
+![Step4](https://media.discordapp.net/attachments/584593411567517710/741729755992293406/unknown.png)
+
+Now the repository is copied and you are ready to open the project "ComplexCalculator.py" if you want to operate complex numbers or onpen. 
 Last i will show you how to run a run a function but is the same method for everyone:
 ~~~
 def add(c1, c2):
     re = c1[0] + c2[0]
     im = c1[1] + c2[1]
     resp = re, im
-    # return resp  
-	print(resp)
+    return resp  
+	
+print(add((1, 2), (3, 4)))
 
-add((1, 2), (3, 4))
 ~~~
-*Remember that we use **print** for this but when we gonna test have to use **return** and that for the input we use tuple's*
+*Remember that we use **tuple's** for the input in all functions*
 
 ## Testing
 Testing is really simple only have to change few things and run the code!.
@@ -63,6 +105,21 @@ class TestComplexCalculator(unittest.TestCase):  "This is the way to start the t
         self.assertEqual(ComplexCalculator.add(a, c), (-1, 3))  "For other test: "
         self.assertEqual(ComplexCalculator.add(b, d), (2, 8))	"ComplexCalculator.function_you_want_to_try"
         self.assertEqual(ComplexCalculator.add(d, c), (3, 9))
+        
+     # MATRIX ADD TEST
+     
+     def test_m_add(self):
+        a = [[(6, 5), (2, 1), (4, 3)], [(4, 4), (4, 4), (4, 4)]]
+        b = [[(10, 1), (2, 3), (6, 7)], [(3, 2), (8, 2), (7, 5)]]  # Be carefull writing 
+        c = [[(-1, 6), (8, -9), (0, 3)], [(0, 0), (8, 5), (-1, -5)]]
+
+        self.assertEqual(ComplexVectorSapces.m_add(a, b), [[(16, 6), (4, 4), (10, 10)], [(7, 6), (12, 6), (11, 9)]])
+        self.assertEqual(ComplexVectorSapces.m_add(a, c), [[(5, 11), (10, -8), (4, 6)], [(4, 4), (12, 9), (3, -1)]])
+        self.assertEqual(ComplexVectorSapces.m_add(b, c), [[(9, 7), (10, -6), (6, 10)], [(3, 2), (16, 7), (6, 0)]])
+        
+        #The test for matrix or vectors are the same, just remember to write the complex numbers as tuple's and the reals 
+        #as tuple's with the second digit being a 0
+     
 ~~~
 *Remember, all test's are equal in structure but change **values** and **function***
 
