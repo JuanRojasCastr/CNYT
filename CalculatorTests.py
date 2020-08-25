@@ -119,3 +119,7 @@ class TestComplexCalculator(unittest.TestCase):
         self.assertEqual(ComplexCalculator.phase(b), 5.03)
         self.assertEqual(ComplexCalculator.phase(c), 0.79)
         self.assertEqual(ComplexCalculator.phase(d), 3.61)
+
+
+if __name__ == '__main__':
+    unittest.main()
