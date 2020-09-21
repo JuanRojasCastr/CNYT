@@ -15,7 +15,12 @@ Here are exactly the things that you can do:
 8. Phase
 
 ### New Update!!
-The calculator recently have a update that add new awesome functions, all related with Complex Vector Spaces, maybe its a hard concept to understand but am sure that this calculator can help you and make it easy.
+
+The last update add new functions related with the jump from the classic computing to the quantum computing, for this add the possibility of calculate the probability of a system with real and complex numbers, also the marbles experiment with Boolean coefficients can be recreated with matrix and vectors, and the best new function is the possibility to graphic the probability of a system. Don't worry about the last function i will explain you how to do it.
+
+
+#### Others Updates:
+The calculator have a update that add new awesome functions, all related with Complex Vector Spaces, maybe its a hard concept to understand but am sure that this calculator can help you and make it easy.
 
 The new functions:
 - Vector Addition
@@ -45,6 +50,10 @@ There is a lot of new functions, am sure that will be very useful,
 ### Prerequisite
 - Python (PyCharm or IDLE)
 - Git
+- Pip
+- numpy
+- scipy
+- matplot
 ### Installing
 Don't mind about the updates, the installation process is the same. 
 
@@ -68,18 +77,86 @@ To copy just go upper and select "code" and click on the copy icon as the follow
 
 ![Step4](https://media.discordapp.net/attachments/584593411567517710/741729755992293406/unknown.png)
 
-Now the repository is copied and you are ready to open the project "ComplexCalculator.py" if you want to operate complex numbers or onpen. 
+Now the repository is copied and you are ready to open the project "ComplexCalculator.py" if you want to operate complex numbers or open. 
 Last i will show you how to run a run a function but is the same method for everyone:
 ~~~
-def add(c1, c2):
-    re = c1[0] + c2[0]
-    im = c1[1] + c2[1]
-    resp = re, im
-    return resp  
+
+	def add(c1, c2):
+    	re = c1[0] + c2[0]
+    	im = c1[1] + c2[1]
+    	resp = re, im
+    	return resp  
 	
-print(add((1, 2), (3, 4)))
+	print(add((1, 2), (3, 4)))
 
 ~~~
+
+As you already know we add the possibility to  graphic probabilities, first look at this video to install the new libraries:
+
+[Installation Tutorial](https://www.youtube.com/watch?v=oE4KeuVNqcQ&t=410s)
+
+If something goes wrong remember that pycharm allow you to download the libraries, once you have all installed star programming!:
+
+~~~
+
+		# First import the libraries and rename it if you want
+    
+    	import matplotlib
+		import matplotlib.pyplot as plt
+		import numpy as np
+    
+    	# Now we create the values of the axes
+    	# For  x axe
+    	Position = [number for number in range(0, len(v1))]
+
+        
+        # For y axe
+        probablities = Clasico_Cuantico.rendijas_cuantico(m1, v1, t)
+        
+        # Both values are vectors
+        
+        # Now name the graphic and the axes
+        ax.set_title('Quantum system probabilities')
+        ax.set_ylabel('Probabilities')
+        ax.set_xlabel('Positions')
+        
+        # IMPORTANT! This grapgic will automatically downoald as a .png in the folder that this program was saved so we gonna name the file
+        
+        plt.savefig('first_graphic.png')
+        
+        # Last we show the grapchi
+        
+        plt.show()
+        
+~~~
+The image in the folder:
+
+![Folder](https://cdn.discordapp.com/attachments/584593411567517710/757660184670896308/unknown.png)
+
+The image saved:
+
+![graphic](https://cdn.discordapp.com/attachments/584593411567517710/757661172794130502/unknown.png)
+
+Now i will show you few things related to the systems
+
+~~~
+		
+        # For both functions we write have three variables
+        t: that is the thicks of the system
+        m1: the matrix
+        v1: the position-state vector
+       	
+		# For real number:
+        
+        print(rendijas_clasico([[0, 1/6, 5/6], [1/3, 1/2, 1/6], [2/3, 1/3, 0]], [[1/6], [1/6], [2/3]], 1)
+        
+        # For complex numbers:
+        
+        print(rendijas_cuntico([[(0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0)], [(1/2, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0)], [(1/2, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0)], [(0, 0), c1, (0, 0), (1, 0), (0, 0), (0, 0), (0, 0), (0, 0)], [(0, 0), c2, (0, 0), (0, 0), (1, 0), (0, 0), (0, 0), (0, 0)], [(0, 0), c3, c1, (0, 0), (0, 0), (1, 0), (0, 0), (0, 0)], [(0, 0), (0, 0), c2, (0, 0), (0, 0), (0, 0), (1, 0), (0, 0)], [(0, 0), (0, 0), c3, (0, 0), (0, 0), (0, 0), (0, 0), (1, 0)]], [[(1, 0)], [(0, 0)], [(0, 0)], [(0, 0)], [(0, 0)], [(0, 0)], [(0, 0)], [(0, 0)]], 1))
+
+        
+~~~
+
 *Remember that we use **tuple's** for the input in all functions*
 
 ## Testing
@@ -88,6 +165,7 @@ Testing is really simple only have to change few things and run the code!.
 For the test open the project "CalculatorTest.py" and follow the next steps:
 
 ~~~
+
 import unittest
 import ComplexCalculator
 
@@ -119,7 +197,23 @@ class TestComplexCalculator(unittest.TestCase):  "This is the way to start the t
         
         #The test for matrix or vectors are the same, just remember to write the complex numbers as tuple's and the reals 
         #as tuple's with the second digit being a 0
+        
+     # CLASIC SYSTEM TEST
      
+         def test_clasic(self):
+        a = [[0, 1/6, 5/6], [1/3, 1/2, 1/6], [2/3, 1/3, 0]]
+        b = [[1/6], [1/6], [2/3]]
+        c = [[0, 0, 0, 0, 0, 0, 0, 0], [1/2, 0, 0, 0, 0, 0, 0, 0], [1/2, 0, 0, 0, 0, 0, 0, 0] , [0, 1/3, 0, 1, 0, 0, 0, 0], [0, 1/3, 0, 0, 1, 0, 0, 0], [0, 1/3, 1/3, 0, 0, 1, 0, 0], [0, 0, 1/3, 0, 0, 0, 1, 0], [0, 0, 1/3, 0, 0, 0, 0, 1]]
+        d = [[1], [0], [0], [0], [0], [0], [0], [0]]
+        e = [[0, 0, 0, 0, 0, 0, 0, 0], [1/2, 0, 0, 0, 0, 0, 0, 0], [1/2, 0, 0, 0, 0, 0, 0, 0] , [0, 1/3, 0, 1, 0, 0, 0, 0], [0, 1/3, 0, 0, 1, 0, 0, 0], [0, 1/3, 1/3, 0, 0, 1, 0, 0], [0, 0, 1/3, 0, 0, 0, 1, 0], [0, 0, 1/3, 0, 0, 0, 0, 1]]
+        f = [[1], [0], [0], [0], [0], [0], [0]]
+
+        self.assertEqual(Clasico_Cuantico.rendijas_clasico(a, b, 1), [[21/36], [9/36], [6/36]])
+        self.assertEqual(Clasico_Cuantico.rendijas_clasico(c, d, 2), [[0], [0], [0], [1/6], [1/6], [1/3], [1/6], [1/6]])
+        self.assertEqual(Clasico_Cuantico.rendijas_clasico(e, f, 1), "Length error")
+        
+        if __name__ == '__main__':
+    		unittest.main()
 ~~~
 *Remember, all test's are equal in structure but change **values** and **function***
 
