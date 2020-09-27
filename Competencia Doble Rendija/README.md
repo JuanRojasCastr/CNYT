@@ -1,8 +1,8 @@
 ## Competencia de la doble rendija.
 
-El experimento de la doble rendija nos permite empezar a entender el mundo cuantico y como la fisica antigua se queda eatras para explicar algunas cosas de nuestro universo.
+El experimento de la doble rendija nos permite empezar a entender el mundo cuántico y como la física antigua se queda atrás para explicar algunas cosas de nuestro universo.
 
-Primero se listaran los materiales y las condiciones del experimento, luego como se hizo y los resultados obtenidos, por ultimos se dará la explicacion de como sucede y una pequeña muestra del calculo de probabilidades mediante la libreria creada.
+Primero se listarán los materiales y las condiciones del experimento, luego como se hizo y los resultados obtenidos, por últimos se dará la explicación de como sucede y una pequeña muestra del cálculo de probabilidades mediante la librería creada.
 
 #### Materiales:
 
@@ -10,72 +10,72 @@ Primero se listaran los materiales y las condiciones del experimento, luego como
 - Tijeras.
 - Hilo (en este caso dental).
 - Un anillo o tubo.
-- Carton y pegamento (opcional).
+- Cartón y pegamento (opcional).
 
 ![Materiales](https://cdn.discordapp.com/attachments/584593411567517710/759475885895319582/20200926_130510.jpg)
 
-#### Condicones:
+#### Condiciones:
 
-- Tener una separacion considerable entre la doble rendija y la pared o superficie donde impacta la luz.
+- Tener una separación considerable entre la doble rendija y la pared o superficie donde impacta la luz.
 - Estar en un lugar con poca luz.
-- Tener una camara en lo posbile con buena definicion y que permita controlar los niveles de luz que entra a la camara (abrir o cerrar opturacion)
+- Tener una cámara en lo posible con buena definición y que permita controlar los niveles de luz que entra a la cámara (abrir o cerrar opturación)
 
-#### Proceso de creacion y montaje.
+#### Proceso de creación y montaje.
 
-1. Lo primero sera cortar un hilo y ponerlo de tal forma que divida en dos el hueco por donde pasa el dedo.
-2. Recrotar pedazos de cinta aislante para sujetar el hilo, luego seguir cortando y pegando para crear la doble rendija. (es importante ir probando que sea suficientemente pequeña la rendija)
-3. De manera opcional se puede pegar un pedazo de carton en la parte de abajo del anillo para poder ponerlo en una superficie sin que se ruede o incline.
+1. Lo primero será cortar un hilo y ponerlo de tal forma que divida en dos el hueco por donde pasa el dedo.
+2. Recorta pedazos de cinta aislante para sujetar el hilo, luego seguir cortando y pegando para crear la doble rendija. (es importante ir probando que sea suficientemente pequeña la rendija)
+3. De manera opcional se puede pegar un pedazo de cartón en la parte de abajo del anillo para poder ponerlo en una superficie sin que se ruede o incline.
 
 *Imagen rendija*
 
 #### Resultados:
 
-Antes de proceder a mostrar los resultados obtenidos recuerde que este es un experimento y por ende se necesita de paciencia, en mi caso mostrare partes del proceso, es decir pequeñas muestras de cada toma hasta llegar a la ultima prueba donde considero que es la mejor. 
-Tambien el registrar el experimento debido al enfoque de la camara.
+Antes de proceder a mostrar los resultados obtenidos recuerde que este es un experimento y por ende se necesita de paciencia, en mi caso mostrare partes del proceso, es decir pequeñas muestras de cada toma hasta llegar a la última prueba donde considero que es la mejor. 
+También el registrar el experimento debido al enfoque de la cámara.
 
-![Priemra foto](https://cdn.discordapp.com/attachments/584593411567517710/759478484430094376/unknown.png)
+![Primera foto](https://cdn.discordapp.com/attachments/584593411567517710/759478484430094376/unknown.png)
 
-En esta primera toma del experimento no habia considerado ni la luz ni la distancia con lo cual era dificl evidenciar el patron.
+En esta primera toma del experimento no había considerado ni la luz ni la distancia con lo cual era difícil evidenciar el patrón.
 
 ![Segunda Foto](https://cdn.discordapp.com/attachments/584593411567517710/759478544559505458/unknown.png)
 
-Aqui logre el patron pero debido a la distancia y la luz todavia no lograba hacer que se viera con mejor definicion.
+Aquí logre el patrón, pero debido a la distancia y la luz todavía no lograba hacer que se viera con mejor definición.
 
 ![Tercera Foto](https://cdn.discordapp.com/attachments/584593411567517710/759478602676174878/unknown.png)
 
-Aqui el patros se podia ver mejor pero el problema era ajustar para que la camara lo lograra captar.
+Aquí el patrón se podía ver mejor pero el problema era ajustar para que la cámara lo lograra captar.
 
 ![Cuarta Foto](https://cdn.discordapp.com/attachments/584593411567517710/759478675715522600/unknown.png)
 
-Este fue el mejor de mis intentos y uno de los ultimos, la camara logro captar "bien" el patron.
+Este fue el mejor de mis intentos y uno de los últimos, la cámara logro captar "bien" el patrón.
 
 Aclaro que todas las fotos son extractos de videos que fui tomando que cada toma.
 
-#### Explicacion:
+#### Explicación:
 
-Primero hay que dejar claro que la luz no es un "rayo", sino una onda, segundo que el movimiento de los fotones de luz se explican atravez de la funcion de onda, y mediante la ecuacion de Schrödinger, estas pueden tener la forma de onas estacionarias
-que se traducen a probabilidades de estar en un estado, hablando de manera coloquial, al funcionanar como ondas estacinarias, estas al llegar a la rendija se solapan unas a otras, es decir hay lugares en que las funciones de onda de cada rendija oscilen a la vez
-y esto nos muestra que en el centro es la mayor probabilidad de de impactar, y existen otros lugares donde las ondas se cancelan, creando estos "huecos" del patron:
+Primero hay que dejar claro que la luz no es un "rayo", sino una onda, segundo que el movimiento de los fotones de luz se explica atreves de la función de onda, y mediante la ecuación de Schrödinger, estas pueden tener la forma de ondas estacionarias
+que se traducen a probabilidades de estar en un estado, hablando de manera coloquial, al funcionaran como ondas estacionarias, estas al llegar a la rendija se solapan unas a otras, es decir hay lugares en que las funciones de onda de cada rendija oscilen a la vez
+y esto nos muestra que en el centro es la mayor probabilidad de de impactar, y existen otros lugares donde las ondas se cancelan, creando estos "huecos" del patrón:
 
 ![Foto con indicaciones](https://cdn.discordapp.com/attachments/584593411567517710/759478818867773520/unknown.png)
 
-*Para mostrar que las probabilidades si cambian utilizamos nuestra liberia*:
+*Para mostrar que las probabilidades si cambian utilizamos nuestra Liberia*:
 
-#### Uso de libreria:
+#### Uso de librería:
 
-Es imporante recalcar que utilizaremos las librerias de este repositorio. 
+Es importante recalcar que utilizaremos las librerías de este repositorio. 
 
-Primero mostramos un ejemplo del sistema si usaramos el sisitema cuantico:
+Primero mostramos un ejemplo del sistema si usáramos el sistema cuántico:
 
 ~~~
 
 
-		# Por comodidad en la escritura definimos los numeros complejos como c1, c2, c3:
+		# Por comodidad en la escritura definimos los números complejos como c1, c2, c3:
         c1 = (-1 / (6 ** 0.5), 1 / (6 ** 0.5))
 		c2 = (-1 / (6 ** 0.5), -1 / (6 ** 0.5))
 		c3 = (1 / (6 ** 0.5), -1 / (6 ** 0.5))
         
-        # Ahora llamamos a la funcion que calcula las probabilidades de un sistema cuantico.
+        # Ahora llamamos a la función que calcula las probabilidades de un sistema cuántico.
         
         print(rendijas_cuantico([[(0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0)], [(1/2, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0)], [(1/2, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0)], [(0, 0), c1, (0, 0), (1, 0), (0, 0), (0, 0), (0, 0), (0, 0)], [(0, 0), c2, (0, 0), (0, 0), (1, 0), (0, 0), (0, 0), (0, 0)], [(0, 0), c3, c1, (0, 0), (0, 0), (1, 0), (0, 0), (0, 0)], [(0, 0), (0, 0), c2, (0, 0), (0, 0), (0, 0), (1, 0), (0, 0)], [(0, 0), (0, 0), c3, (0, 0), (0, 0), (0, 0), (0, 0), (1, 0)]], [[(1, 0)], [(0, 0)], [(0, 0)], [(0, 0)], [(0, 0)], [(0, 0)], [(0, 0)], [(0, 0)]], 2))
         
@@ -89,19 +89,19 @@ Para ver de manera grafica lo que hicimos, es decir ver nuestro vector inicial, 
 
 *Recuerde que es solo un ejemplo y no se consideran todas las posibles opciones, por esto nos dan probabilidades diferentes a la realidad*
 
-Ahora mostraremos el procedimiento con un sistema probabilistico clasico:
+Ahora mostraremos el procedimiento con un sistema probabilístico clásico:
 
 ~~~
 
 		
-        # Llamamos la funcion que calcula las probabilidades de forma clasica:
+        # Llamamos la función que calcula las probabilidades de forma clásica:
         
         print(rendijas_clasico([[0, 0, 0, 0, 0, 0, 0, 0], [1/2, 0, 0, 0, 0, 0, 0, 0], [1/2, 0, 0, 0, 0, 0, 0, 0], [0, 1/3, 0, 1, 0, 0, 0, 0], [0, 1/3, 0, 0, 1, 0, 0, 0], [0, 1/3, 1/3, 0, 0, 1, 0, 0], [0, 0, 1/3, 0, 0, 0, 1, 0], [0, 0, 1/3, 0, 0, 0, 0, 1]], [[1], [0], [0], [0], [0], [0], [0], [0]], 2))
 
-		# Con esto sería sufuciente
+		# Con esto sería suficiente
 ~~~
 
-De forma grafia tendriamos:
+De forma gráfica tendríamos:
 
 ![Imagen Referencia 2](https://cdn.discordapp.com/attachments/584593411567517710/759491041195196416/unknown.png)
 
